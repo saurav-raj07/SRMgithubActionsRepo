@@ -1,0 +1,19 @@
+name: MyFirstworkflow
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  first-run:
+    runs-on: ububtu-latest
+
+    steps: 
+      - name: checkout reporitory
+        uses: actions/checkout@v6
+
+      - name: say Hello
+        run:  | 
+          echo "hello world" 
+          echo "this is my forst workflow"
