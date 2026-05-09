@@ -7,11 +7,11 @@ on:
 
 jobs:
   first-run:
-    runs-on: ububtu-latest
+    runs-on: ubuntu-latest
 
     steps: 
       - name: checkout reporitory
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: say Hello
         run:  | 
